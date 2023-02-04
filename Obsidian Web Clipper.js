@@ -14,7 +14,7 @@ javascript: Promise.all([
 ]).then(async ([{ default: Turndown }, { default: Readability }]) => {
   const vault = "Jarvis";
   const folder = "📖 Bookshelf/Unread/";
-  const tags = "- article\n- status_unread";
+  const tags = "- article\n- status/unread";
   function getSelectionHtml() {
     var html = "";
     if (typeof window.getSelection != "undefined") {
@@ -82,13 +82,13 @@ javascript: Promise.all([
     "\n" +
     "---\n" +
     "> [!info]-\n" +
-    "> This article was downloaded from the internet ([source](" +
-    document.URL +
-    ")) and placed on my [[Bookshelf]] on [[" +
-    today +
-    "]].\n\n" +
+    "> This article was downloaded from the internet ([source](" + document.URL + ")) and placed on my [[Bookshelf]] on [[" + today + "]].\n> \n" +
+    "> This file automatically move to a folder matching the option chosen below.\n\n" +
     "> [!cite] Current progress\n" +
-    "> - [ ] Mark as Read\n\n" +
+    "> - [x] *Unread*\n" +
+    "> - [ ] *Reading*\n" +
+    "> - [ ] *Finished*\n" +
+    "> - [ ] **Favorite**\n\n" +
     markdownBody;
   document.location.href =
     "obsidian://new?" +
