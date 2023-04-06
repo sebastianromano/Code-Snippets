@@ -89,9 +89,9 @@ javascript: Promise.all([
     "]].\n> \n" +
     "> This file automatically move to a folder matching the option chosen below.\n\n" +
     "> [!cite] Current progress\n" +
-    "> - [x] *Unread*\n" +
-    "> - [ ] *Reading*\n" +
-    "> - [ ] *Finished*\n\n" +
+    "> - [x] *[[Unread]]*\n" +
+    "> - [ ] *[[Reading]]*\n" +
+    "> - [ ] *[[Finished]]*\n\n" +
     markdownBody;
   document.location.href =
     "obsidian://new?" +
